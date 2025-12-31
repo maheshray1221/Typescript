@@ -19,3 +19,15 @@ export interface AuthProps {
     ): void
 
 }
+
+export interface ProductProps {
+    name: string
+    quntity: number
+    price: number
+}
+
+export interface RequirmentProps {
+    onSubmit(detail: {
+        name: string, quantity: number, price: number
+    }): void
+}
